@@ -1,0 +1,22 @@
+{
+  "name": "nbfc-chatbot",
+  "version": "1.0.0",
+  "description": "NBFC Chatbot - Tata Capital Loan Assistant",
+  "scripts": {
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "build": "npm run install:backend && npm run install:frontend && npm run build:frontend",
+    "start": "cd backend && npx ts-node src/server.ts",
+    "dev:backend": "cd backend && npx ts-node src/server.ts",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "npm run dev:backend"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": ["nbfc", "chatbot", "loan", "tata-capital"],
+  "author": "Dilipgowdas4084",
+  "license": "MIT"
+}

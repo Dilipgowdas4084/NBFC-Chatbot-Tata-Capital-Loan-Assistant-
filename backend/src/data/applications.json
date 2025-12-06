@@ -1,5 +1,45 @@
 [
     {
+        "id": "APP1765045213810",
+        "customerId": "101",
+        "date": "2025-12-06",
+        "amount": 70000,
+        "status": "Approved",
+        "tenure": 36,
+        "interestRate": 0.14,
+        "emi": 2392
+    },
+    {
+        "id": "APP1765043651289",
+        "customerId": "101",
+        "date": "2025-12-06",
+        "amount": 50000,
+        "status": "Approved",
+        "tenure": 24,
+        "interestRate": 0.14,
+        "emi": 2401
+    },
+    {
+        "id": "APP1765043528673",
+        "customerId": "101",
+        "date": "2025-12-06",
+        "amount": 25000,
+        "status": "Approved",
+        "tenure": 12,
+        "interestRate": 0.14,
+        "emi": 2245
+    },
+    {
+        "id": "APP1765042630966",
+        "customerId": "101",
+        "date": "2025-12-06",
+        "amount": 300000,
+        "status": "Approved",
+        "tenure": 12,
+        "interestRate": 0.14,
+        "emi": 26936
+    },
+    {
         "id": "APP1765007698781",
         "customerId": "101",
         "date": "2025-12-06",

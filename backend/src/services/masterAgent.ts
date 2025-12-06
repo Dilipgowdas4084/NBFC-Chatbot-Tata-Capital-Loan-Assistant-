@@ -48,6 +48,9 @@ const handleConversationalQuery = (
     const creditScore = customer ? (creditScores[customer.pan] || 650) : 650;
     const preApprovedLimit = customer ? (offers[state.customerId]?.preApprovedAmount || customer.preApprovedLimit || 0) : 0;
     const interestRate = offers[state.customerId]?.baseInterestRate || 0.15;
+    
+    // Debug logging for over-limit detection
+    console.log(`[OverLimit Check] Message: "${message}", CustomerId: ${state.customerId}, PreApprovedLimit: ${preApprovedLimit}`);
 
     // Check for "why" questions about rejection
     if (lowerMessage.includes('why') && (lowerMessage.includes('reject') || lowerMessage.includes('denied') || lowerMessage.includes('not approved'))) {
@@ -110,6 +113,27 @@ const handleConversationalQuery = (
         return {
             nextState: state.currentState,
             botMessage: `💰 **Your Loan Limits:**\n\n🟢 **Instant Approval:** Up to ${formatCurrency(preApprovedLimit)}\n🟡 **With Salary Proof:** Up to ${formatCurrency(preApprovedLimit * 2)}\n\nThese limits are based on your profile and credit history. Would you like to apply for a loan?`,
+            actions: []
+        };
+    }
+
+    // Check for AMOUNT EXCEEDING PRE-APPROVED LIMIT
+    // Match patterns like: "500000", "5 lakh", "5lakh", "10 lac", "1000000"
+    const lakhMatch = message.match(/(\d+)\s*(?:lakh|lac|lakhs)/i);
+    const directAmountMatch = message.match(/\b(\d{5,9})\b/);
+    
+    let requestedAmount = 0;
+    if (lakhMatch) {
+        requestedAmount = parseInt(lakhMatch[1]) * 100000;
+    } else if (directAmountMatch) {
+        requestedAmount = parseInt(directAmountMatch[1]);
+    }
+    
+    if (requestedAmount > 0 && preApprovedLimit > 0 && requestedAmount > preApprovedLimit) {
+        const customerName = customer?.name || 'Valued Customer';
+        return {
+            nextState: state.currentState,
+            botMessage: `${customerName}, I absolutely love your ambition! 🌟\n\nYour current pre-approved digital limit is **${formatCurrency(preApprovedLimit)}**, which I can process instantly right here.\n\nHowever, for the amount you're looking at (**${formatCurrency(requestedAmount)}**), I have great news! Our Senior Credit Team can evaluate your profile for an enhanced limit.\n\n📞 **Contact our Relationship Manager directly:**\n• **Phone:** 1800-209-4545 (Toll-Free, 24x7)\n• **Email:** loans@tatacapital.com\n• **Visit:** Your nearest Tata Capital branch\n\n🎯 **What to mention:** Reference your pre-approved offer and request a 'Credit Limit Enhancement Review'\n\n💡 **Pro tip:** If you have additional income proof, property documents, or recent salary hikes - share those! They often help unlock higher limits.\n\nMeanwhile, would you like to proceed with ${formatCurrency(preApprovedLimit)} now? You can always top-up later once the enhanced limit is approved!`,
             actions: []
         };
     }
