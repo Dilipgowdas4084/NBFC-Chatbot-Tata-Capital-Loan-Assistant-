@@ -1,0 +1,59 @@
+Server is running on http://localhost:3000
+Received message:  | State: START | Action: undefined
+[MasterAgent] Current State: START
+Received message:  | State: START | Action: undefined
+[MasterAgent] Current State: START
+Received message: 25000 | State: COLLECTING_LOAN_DETAILS | Action: undefined
+[MasterAgent] Current State: COLLECTING_LOAN_DETAILS
+Received message: 12 | State: COLLECTING_LOAN_DETAILS | Action: undefined
+[MasterAgent] Current State: COLLECTING_LOAN_DETAILS
+Received message: what will be the intrest | State: KYC | Action: undefined
+[MasterAgent] Current State: KYC
+Received message: ok | State: UNDERWRITING | Action: undefined
+[MasterAgent] Current State: UNDERWRITING
+Underwriting: Score=680, Amount=25000, Limit=100000, Salary=45000
+Received message: explain | State: REJECTED | Action: undefined
+[MasterAgent] Current State: REJECTED
+Received message: why was i rejected? | State: REJECTED | Action: undefined
+[MasterAgent] Current State: REJECTED
+[MasterAgent] Handled conversational query
+Received message:  | State: START | Action: undefined
+[MasterAgent] Current State: START
+Received message:  | State: START | Action: undefined
+[MasterAgent] Current State: START
+Received message: 25000 | State: COLLECTING_LOAN_DETAILS | Action: undefined
+[MasterAgent] Current State: COLLECTING_LOAN_DETAILS
+Received message: 12 | State: COLLECTING_LOAN_DETAILS | Action: undefined
+[MasterAgent] Current State: COLLECTING_LOAN_DETAILS
+Received message: yes | State: KYC | Action: undefined
+[MasterAgent] Current State: KYC
+Received message: ok | State: UNDERWRITING | Action: undefined
+[MasterAgent] Current State: UNDERWRITING
+Underwriting: Score=750, Amount=25000, Limit=300000, Salary=80000
+Received message: bill? | State: APPROVED | Action: undefined
+[MasterAgent] Current State: APPROVED
+Sanction letter generated: /Users/dilipgowdas/Documents/Banking/nbfc-chatbot/backend/uploads/sanction_APP1765007474221.pdf
+Sanction letter generated for application: APP1765007474221
+Application APP1765007474221 saved to recent applications
+Received message:  | State: START | Action: undefined
+[MasterAgent] Current State: START
+Received message:  | State: START | Action: undefined
+[MasterAgent] Current State: START
+Received message: 25000 | State: COLLECTING_LOAN_DETAILS | Action: undefined
+[MasterAgent] Current State: COLLECTING_LOAN_DETAILS
+Received message: 12 months | State: COLLECTING_LOAN_DETAILS | Action: undefined
+[MasterAgent] Current State: COLLECTING_LOAN_DETAILS
+Received message: yes | State: KYC | Action: undefined
+[MasterAgent] Current State: KYC
+Received message: ok | State: UNDERWRITING | Action: undefined
+[MasterAgent] Current State: UNDERWRITING
+Underwriting: Score=750, Amount=25000, Limit=300000, Salary=80000
+Received message: bill? | State: APPROVED | Action: undefined
+[MasterAgent] Current State: APPROVED
+Sanction letter generated: /Users/dilipgowdas/Documents/Banking/nbfc-chatbot/backend/uploads/sanction_APP1765007698781.pdf
+Sanction letter generated for application: APP1765007698781
+Application APP1765007698781 saved to recent applications
+Received message:  | State: START | Action: undefined
+[MasterAgent] Current State: START
+Received message:  | State: START | Action: undefined
+[MasterAgent] Current State: START

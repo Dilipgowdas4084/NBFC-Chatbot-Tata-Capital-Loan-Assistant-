@@ -1,0 +1,122 @@
+[
+    {
+        "id": "101",
+        "name": "Amit Verma",
+        "age": 32,
+        "city": "Mumbai",
+        "pan": "ABCDE1234F",
+        "phone": "9876543210",
+        "address": "Andheri East, Mumbai",
+        "salary": 80000,
+        "currentLoans": 1,
+        "preApprovedLimit": 300000
+    },
+    {
+        "id": "102",
+        "name": "Priya Sharma",
+        "age": 28,
+        "city": "Delhi",
+        "pan": "PQRSX9876Z",
+        "phone": "9123456789",
+        "address": "Connaught Place, Delhi",
+        "salary": 45000,
+        "currentLoans": 0,
+        "preApprovedLimit": 100000
+    },
+    {
+        "id": "103",
+        "name": "Rahul Singh",
+        "age": 35,
+        "city": "Bangalore",
+        "pan": "LMNO5678Y",
+        "phone": "9988776655",
+        "address": "Indiranagar, Bangalore",
+        "salary": 120000,
+        "currentLoans": 2,
+        "preApprovedLimit": 500000
+    },
+    {
+        "id": "104",
+        "name": "Sneha Gupta",
+        "age": 25,
+        "city": "Pune",
+        "pan": "XYZA1122B",
+        "phone": "9876500001",
+        "address": "Koregaon Park, Pune",
+        "salary": 30000,
+        "currentLoans": 0,
+        "preApprovedLimit": 50000
+    },
+    {
+        "id": "105",
+        "name": "Vikram Malhotra",
+        "age": 40,
+        "city": "Gurgaon",
+        "pan": "QWER4321M",
+        "phone": "9876500002",
+        "address": "Cyber City, Gurgaon",
+        "salary": 200000,
+        "currentLoans": 1,
+        "preApprovedLimit": 1000000
+    },
+    {
+        "id": "106",
+        "name": "Anjali Das",
+        "age": 29,
+        "city": "Kolkata",
+        "pan": "LKJH0987K",
+        "phone": "9876500003",
+        "address": "Salt Lake, Kolkata",
+        "salary": 60000,
+        "currentLoans": 1,
+        "preApprovedLimit": 150000
+    },
+    {
+        "id": "107",
+        "name": "Rohit Kumar",
+        "age": 31,
+        "city": "Hyderabad",
+        "pan": "POIU7654H",
+        "phone": "9876500004",
+        "address": "Banjara Hills, Hyderabad",
+        "salary": 95000,
+        "currentLoans": 0,
+        "preApprovedLimit": 400000
+    },
+    {
+        "id": "108",
+        "name": "Meera Iyer",
+        "age": 27,
+        "city": "Chennai",
+        "pan": "ZXCV5678C",
+        "phone": "9876500005",
+        "address": "Adyar, Chennai",
+        "salary": 55000,
+        "currentLoans": 0,
+        "preApprovedLimit": 200000
+    },
+    {
+        "id": "109",
+        "name": "Arjun Reddy",
+        "age": 33,
+        "city": "Bangalore",
+        "pan": "MNBV6543A",
+        "phone": "9876500006",
+        "address": "Whitefield, Bangalore",
+        "salary": 110000,
+        "currentLoans": 1,
+        "preApprovedLimit": 450000
+    },
+    {
+        "id": "110",
+        "name": "Kavita Nair",
+        "age": 30,
+        "city": "Kochi",
+        "pan": "ASDF1234G",
+        "phone": "9876500007",
+        "address": "MG Road, Kochi",
+        "salary": 70000,
+        "currentLoans": 0,
+        "preApprovedLimit": 250000
+    }
+]

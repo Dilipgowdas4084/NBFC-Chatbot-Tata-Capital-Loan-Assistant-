@@ -1,0 +1,92 @@
+{
+    "101": {
+        "preApprovedAmount": 300000,
+        "baseInterestRate": 0.14,
+        "tenureMonths": [
+            12,
+            24,
+            36,
+            48
+        ]
+    },
+    "102": {
+        "preApprovedAmount": 100000,
+        "baseInterestRate": 0.18,
+        "tenureMonths": [
+            12,
+            24
+        ]
+    },
+    "103": {
+        "preApprovedAmount": 500000,
+        "baseInterestRate": 0.12,
+        "tenureMonths": [
+            12,
+            24,
+            36,
+            60
+        ]
+    },
+    "104": {
+        "preApprovedAmount": 50000,
+        "baseInterestRate": 0.20,
+        "tenureMonths": [
+            12
+        ]
+    },
+    "105": {
+        "preApprovedAmount": 1000000,
+        "baseInterestRate": 0.11,
+        "tenureMonths": [
+            12,
+            36,
+            60
+        ]
+    },
+    "106": {
+        "preApprovedAmount": 150000,
+        "baseInterestRate": 0.16,
+        "tenureMonths": [
+            12,
+            24,
+            36
+        ]
+    },
+    "107": {
+        "preApprovedAmount": 400000,
+        "baseInterestRate": 0.13,
+        "tenureMonths": [
+            12,
+            24,
+            48
+        ]
+    },
+    "108": {
+        "preApprovedAmount": 200000,
+        "baseInterestRate": 0.15,
+        "tenureMonths": [
+            12,
+            24,
+            36
+        ]
+    },
+    "109": {
+        "preApprovedAmount": 450000,
+        "baseInterestRate": 0.13,
+        "tenureMonths": [
+            12,
+            24,
+            48,
+            60
+        ]
+    },
+    "110": {
+        "preApprovedAmount": 250000,
+        "baseInterestRate": 0.15,
+        "tenureMonths": [
+            12,
+            24,
+            36
+        ]
+    }
+}
