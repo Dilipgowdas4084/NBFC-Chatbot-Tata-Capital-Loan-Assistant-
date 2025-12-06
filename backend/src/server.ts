@@ -9,12 +9,22 @@ import chatbotRoutes from './routes/chatbot';
 import applicationsRoutes from './routes/applications';
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
-// CORS configuration - allow frontend origins
+// CORS configuration - allow all origins for deployed app
 app.use(cors({
-    origin: ['http://localhost:5173', 'http://localhost:5174', 'http://127.0.0.1:5173'],
-    credentials: true
+    origin: [
+        'http://localhost:5173', 
+        'http://localhost:5174', 
+        'http://127.0.0.1:5173',
+        'https://nbfc-chatbot-tata-capital-loan-assistant-888g.onrender.com',
+        'https://nbfc-chatbot-tata-capital-loan-assistant.onrender.com',
+        /\.onrender\.com$/,  // Allow all Render subdomains
+        /\.vercel\.app$/     // Allow all Vercel subdomains
+    ],
+    credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization']
 }));
 app.use(express.json());
 
