@@ -1,7 +1,13 @@
 import axios from 'axios';
 
 // Use environment variable for API URL, fallback to localhost for development
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+// Ensure the URL ends with /api
+let API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api';
+
+// Auto-append /api if not present
+if (API_BASE_URL && !API_BASE_URL.endsWith('/api')) {
+    API_BASE_URL = API_BASE_URL.replace(/\/$/, '') + '/api';
+}
 
 export const sendMessage = async (
     sessionId: string,
