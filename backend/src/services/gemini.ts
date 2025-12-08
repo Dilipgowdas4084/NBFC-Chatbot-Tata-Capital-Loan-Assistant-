@@ -10,9 +10,9 @@ if (!API_KEY) {
 }
 
 const genAI = new GoogleGenerativeAI(API_KEY || '');
-// Using gemini-2.0-flash - the latest available model
-// Make sure the API key has access to the Generative Language API.
-const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+// Using gemma-3-4b-it - an available model with quota
+// Note: gemini-2.0-flash quota exhausted, using gemma as fallback
+const model = genAI.getGenerativeModel({ model: "gemma-3-4b-it" });
 
 interface ExtractionResult {
     amount?: number;
